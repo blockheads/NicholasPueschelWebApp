@@ -3,6 +3,12 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.nav{
+  position: fixed;
+  top:0;
+  right:0;
+}
+
 div.container {
   position: relative;
   margin-top: 10%;
@@ -11,10 +17,24 @@ div.container {
 }
 
 div.descriptor{
-  position: relative;
-  margin-top: 10%;
+  position: absolute;
+  margin-left: 10%;
   margin-bottom: 50%;
-  border: 3px solid #000;
+}
+
+.buttonWrapper {
+   text-align: center;
+   margin-top:10%;
+   margin-right:10%;
+}
+
+.contact{
+  position: relative;
+  font-size:30px;
+  border: 2px solid #73AD21 dotted;
+  color:white;
+  opacity:1;
+  background-image: url("../textures/pink dust.png");
 }
 
 h1 {
@@ -25,7 +45,8 @@ h1 {
 
 h2{
   color: white;
-  text-align: center;
+  text-align: right;
+  opacity: .8;
 }
 
 ul {
