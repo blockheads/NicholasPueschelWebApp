@@ -65,8 +65,23 @@ div.descriptorText{
 }
 
 img.me{
-float:right;
-padding-left:50px;
+  float:right;
+  padding-left:50px;
+  opacity:.6;
+}
+
+div.projectContainer{
+  width: 45%;
+  height: 250px;
+  background: #334A57;
+  float:left;
+  margin: 10px;
+}
+
+p{
+  padding-left:10px;
+  padding-bottom:10px;
+  color: #73AD21;
 }
 
 #anchor {
@@ -135,6 +150,13 @@ h2.description2{
   opacity: .8;
 }
 
+h2.projectDescription{
+  color: #e6f1ff;
+  text-align: center;
+  opacity: .8;
+  padding-top:10px;
+}
+
 h2{
   color: #58bb7c;
   text-align: right;
@@ -146,6 +168,20 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+}
+
+ul.languages{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color:grey;
+}
+
+li.language{
+  float:left;
+  padding-left:10px;
 
 }
 

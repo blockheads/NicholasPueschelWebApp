@@ -4,8 +4,13 @@ import os
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+@app.route('/index.html')
+def home():
     return render_template('home.html')
+
+@app.route('/resume') #the url you'll send the user to when he wants the pdf
+def pdfviewer():
+    return redirect("/resume.pdf") #the pdf itself
 
 # https://stackoverflow.com/questions/21714653/flask-css-not-updating
 # for browser caching
