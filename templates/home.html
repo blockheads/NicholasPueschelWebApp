@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="{{url_for('static', filename='js/home.js')}}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Nicholas Pueschel</title>
 
 </head>
 <body>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <div class="nav" id="navbar">
+        <ul>
 
-    </ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+
+        </ul>
+    </div>
+
 
     <div class="container">
-        <div class="desciptor">
+        <div class="descriptor">
             <h1>
             NICHOLAS PUESCHEL
             </h1>
@@ -26,23 +31,32 @@
             <h2>
                 Rochester Institute of Technology Class of 2021
             </h2>
+            <div class ="buttonWrapper">
+                <button class="contact">
+                    CONTACT ME
+                </button>
+            </div>
         </div>
-    </div>
+    </div >
 
-    <div class="container">
-        <h1>
-        blah blah blah
-        </h1>
-        <h2>
-            blah blah blah
-        </h2>
-        <h2>
-            blah blah blah
-            blah blah blah
-            blah blah blah
-            blah blah blah
-            blah blah blah
-        </h2>
+    <hr class="about">
+
+    <div class="containerAbout" id="about">
+        <div class ="shiftCenter">
+            <h1 class="description1">
+                ABOUT
+            </h1>
+            <h2 class="description2">
+                :)
+            </h2>
+            <h2 class="description2">
+                I am the greatest programmer that ever lived.
+                I am the greatest programmer that ever lived.
+                I am the greatest programmer that ever lived.
+                I am the greatest programmer that ever lived.
+            </h2>
+
+        </div>
     </div>
 
 </body>

@@ -7,6 +7,7 @@ body{
   position: fixed;
   top:0;
   right:0;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 div.container {
@@ -16,10 +17,45 @@ div.container {
   border: 3px solid #73AD21;
 }
 
+div.divider1{
+  position: relative;
+  height:100%;
+  background: url("../textures/moroccan-flower-dark.png");
+  opacity:.5;
+}
+
+div.containerAbout {
+  position: relative;
+  margin-bottom: 50%;
+  border: 3px solid #73AD21;
+}
+
 div.descriptor{
   position: absolute;
   margin-left: 10%;
-  margin-bottom: 50%;
+  margin-bottom: 10%;
+}
+
+div.descriptorText{
+  position: absolute;
+  margin-bottom: 10%;
+
+}
+
+#anchor {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+div.shiftCenter{
+  position: relative;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 3px solid #73AD21;
+}
+
+hr.about{
+   border: 3px solid #8033FF;
 }
 
 .buttonWrapper {
@@ -41,6 +77,18 @@ h1 {
   text-align: center;
   color: white;
   font-size: 100px;
+}
+
+h1.description1{
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+h2.description2{
+  color: white;
+  text-align: left;
+  opacity: .8;
 }
 
 h2{
