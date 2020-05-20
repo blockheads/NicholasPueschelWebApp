@@ -1,5 +1,13 @@
 body{
-  background-image: url("../textures/pink dust.png");
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#334557+0,304356+100 */
+background: #334557; /* Old browsers */
+background: -moz-linear-gradient(top,  #334557 0%, #304356 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #334557 0%,#304356 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #334557 0%,#304356 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334557', endColorstr='#304356',GradientType=0 ); /* IE6-9 */
+
+
+
   font-family: 'Roboto', sans-serif;
 }
 
@@ -12,7 +20,7 @@ body{
 
 div.container {
   position: relative;
-  margin-top: 10%;
+  margin-top: 100px;
   margin-bottom: 50%;
   border: 3px solid #73AD21;
 }
@@ -20,14 +28,14 @@ div.container {
 div.divider1{
   position: relative;
   height:100%;
-  background: url("../textures/moroccan-flower-dark.png");
+  background: url("../images/moroccan-flower-dark.png");
   opacity:.5;
 }
 
 div.containerAbout {
   position: relative;
-  margin-bottom: 50%;
-  border: 3px solid #73AD21;
+  margin-bottom: 30%;
+  scroll-margin-top: 100px;
 }
 
 div.descriptor{
@@ -42,6 +50,15 @@ div.descriptorText{
 
 }
 
+.links{
+  position: fixed;
+  left:0;
+  bottom:0;
+  margin-bottom:100px;
+  margin-left:50px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
 #anchor {
     padding-top: 50px;
     margin-top: -50px;
@@ -51,11 +68,18 @@ div.shiftCenter{
   position: relative;
   margin-left: 25%;
   margin-right: 25%;
-  border: 3px solid #73AD21;
 }
 
 hr.about{
    border: 3px solid #8033FF;
+}
+
+hr.projects{
+   border: 3px solid #80A3FF;
+}
+
+hr.contact{
+   border: 3px solid #F0A3FF;
 }
 
 .buttonWrapper {
@@ -67,10 +91,17 @@ hr.about{
 .contact{
   position: relative;
   font-size:30px;
-  border: 2px solid #73AD21 dotted;
-  color:white;
+  border: 2px solid #73AD21;
+  color: grey;
   opacity:1;
-  background-image: url("../textures/pink dust.png");
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#334557+0,0d3156+100 */
+background: #334557; /* Old browsers */
+
+}
+
+.contact:hover{
+  animation: buttonHighlight 1s infinite;
+  animation-direction: alternate;
 }
 
 h1 {
@@ -86,13 +117,13 @@ h1.description1{
 }
 
 h2.description2{
-  color: white;
+  color: #70A8C1;
   text-align: left;
   opacity: .8;
 }
 
 h2{
-  color: white;
+  color: #1CEB93;
   text-align: right;
   opacity: .8;
 }
@@ -107,6 +138,10 @@ ul {
 
 li {
   float: right;
+}
+
+li.link {
+  float: none;
 }
 
 li a {
@@ -125,6 +160,14 @@ li a:hover {
   animation-fill-mode: forwards;
 }
 
+li a.imageLink:hover {
+  opacity: 1;
+  -webkit-transform: scale(1);
+   transform: scale(1.2);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+}
+
 @keyframes glow {
   from {
     box-shadow: 0 0 0px 0px #EEFF47;
@@ -134,4 +177,14 @@ li a:hover {
   }
 }
 
+@keyframes buttonHighlight{
+from {
+    box-shadow: 0 0 0px 0px #EEFF47;
+  }
+  to {
+     box-shadow: 0 0 5px 0px #A69FFF;
+     filter : hue-rotate(180deg);
+
+  }
+}
 
