@@ -34,7 +34,7 @@ div.divider1{
 
 div.containerAbout {
   position: relative;
-  margin-bottom: 15%;
+  margin-bottom: 20%;
   scroll-margin-top: 100px;
 }
 
@@ -67,7 +67,7 @@ div.descriptorText{
 img.me{
   float:right;
   padding-left:50px;
-  opacity:.6;
+  opacity:.8;
 }
 
 div.projectContainer{
@@ -76,6 +76,10 @@ div.projectContainer{
   background: #334A57;
   float:left;
   margin: 10px;
+}
+
+div.projectDescription{
+    height:200px;
 }
 
 p{
@@ -132,6 +136,13 @@ background: #334557; /* Old browsers */
   animation-direction: alternate;
 }
 
+.email{
+  bottom:0;
+  right:0;
+  position:fixed;
+  padding-right:20px;
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -150,11 +161,18 @@ h2.description2{
   opacity: .8;
 }
 
+h3.description3{
+  padding-top:10px;
+  color: #e6f1ff;
+  text-align: left;
+  font-size:18px;
+  opacity: .8;
+}
+
 h2.projectDescription{
   color: #e6f1ff;
   text-align: center;
   opacity: .8;
-  padding-top:10px;
 }
 
 h2{
@@ -177,6 +195,10 @@ ul.languages{
   padding: 0;
   overflow: hidden;
   color:grey;
+
+  display: table-cell;
+  vertical-align: bottom;
+  float:bottom;
 }
 
 li.language{
@@ -219,6 +241,16 @@ li a.imageLink:hover {
    transform: scale(1.2);
    -webkit-transition: .3s ease-in-out;
    transition: .3s ease-in-out;
+}
+
+.projectContainer:hover{
+  opacity:1;
+  -webkit-transform: scale(1);
+   transform: scale(1.1);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+   animation: glow 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes glow {
