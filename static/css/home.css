@@ -20,7 +20,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334557', end
 
 div.container {
   position: relative;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 50%;
   border: 3px solid #73AD21;
 }
@@ -34,7 +34,13 @@ div.divider1{
 
 div.containerAbout {
   position: relative;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
+  scroll-margin-top: 100px;
+}
+
+div.containerAboutEnd {
+  position: relative;
+  margin-bottom: 10%;
   scroll-margin-top: 100px;
 }
 
@@ -54,9 +60,13 @@ div.descriptorText{
   position: fixed;
   left:0;
   bottom:0;
-  margin-bottom:100px;
+  margin-bottom:50px;
   margin-left:50px;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+img.me{
+float:right;
+padding-left:50px;
 }
 
 #anchor {
@@ -72,14 +82,17 @@ div.shiftCenter{
 
 hr.about{
    border: 3px solid #8033FF;
+   width:50%;
 }
 
 hr.projects{
    border: 3px solid #80A3FF;
+   width:50%;
 }
 
 hr.contact{
    border: 3px solid #F0A3FF;
+   width:50%;
 }
 
 .buttonWrapper {
@@ -117,13 +130,13 @@ h1.description1{
 }
 
 h2.description2{
-  color: #70A8C1;
+  color: #e6f1ff;
   text-align: left;
   opacity: .8;
 }
 
 h2{
-  color: #1CEB93;
+  color: #58bb7c;
   text-align: right;
   opacity: .8;
 }
@@ -158,6 +171,10 @@ li a:hover {
   opacity: 1;
   animation: glow 1s;
   animation-fill-mode: forwards;
+}
+
+li a.imageLink{
+  opacity: .5;
 }
 
 li a.imageLink:hover {

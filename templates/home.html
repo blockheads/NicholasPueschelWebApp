@@ -24,7 +24,7 @@
     <div class="links" id="links">
         <ul>
 
-            <li class="link"><a class="imageLink" href="https://github.com/blockheads"><img src=""
+            <li class="link"><a class="imageLink" href="https://github.com/blockheads"><img src="{{url_for('static', filename='images/github.png')}}"
             height=50" width="50"></a></li>
 
         </ul>
@@ -55,16 +55,24 @@
     <div class="containerAbout" id="about">
         <div class ="shiftCenter">
             <h1 class="description1">
-                ABOUT_ME
+                ABOUT.ME
             </h1>
+
+            <img class="me" src="{{url_for('static', filename='images/me.jpg')}}">
             <h2 class="description2">
-                :)
+                Welcome to my website running on pythonAnywhere!
             </h2>
             <h2 class="description2">
-                I am the greatest programmer that ever lived.
-                I am the greatest programmer that ever lived.
-                I am the greatest programmer that ever lived.
-                I am the greatest programmer that ever lived.
+                I am a computer science student currently studying at RIT, and expecting to graduate in 2021.
+            </h2>
+
+            <h2 class="description2">
+                I have programmed in many different environments, after pursuing my own projects and working at FacilityConnex,
+                a company out of Nashua NH, and additionally L3Harris, a company in Victor NY.
+            </h2>
+
+            <h2 class="description2">
+                Please take a look at some of my projects, and don't hesitate to contact me with any questions.
             </h2>
 
         </div>
@@ -75,7 +83,7 @@
     <div class="containerAbout" id="projects">
         <div class ="shiftCenter">
             <h1 class="description1">
-                PROJECT_ZONE
+                PROJECT.ZONE
             </h1>
             <h2 class="description2">
                 :)
@@ -92,20 +100,23 @@
 
     <hr class="contact">
 
-    <div class="containerAbout" id="contact">
+    <div class="containerAboutEnd" id="contact">
         <div class ="shiftCenter">
             <h1 class="description1">
-                CONTACT_ME
+                CONTACT.ME
             </h1>
             <h2 class="description2">
-
+                Thank you for taking the time to explore what I've been up to.
             </h2>
             <h2 class="description2">
-                I am the greatest programmer that ever lived.
-                I am the greatest programmer that ever lived.
-                I am the greatest programmer that ever lived.
-                I am the greatest programmer that ever lived.
+                Currently I am looking for an internship for fall of 2020, press the magic button below and let's chat.
             </h2>
+
+            <div class ="buttonWrapper">
+                <button class="contact">
+                    GET IN TOUCH
+                </button>
+            </div>
 
         </div>
     </div>
