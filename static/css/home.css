@@ -57,9 +57,8 @@ div.descriptorText{
 }
 
 .links{
-  position: fixed;
-  left:0;
-  bottom:0;
+  position: relative;
+
   margin-bottom:50px;
   margin-left:50px;
 }
@@ -163,16 +162,29 @@ h2.description2{
 
 h3.description3{
   padding-top:10px;
-  color: #e6f1ff;
+  color: white;
   text-align: left;
-  font-size:18px;
+  font-size:16px;
   opacity: .8;
+}
+
+p.about{
+ padding-top:10px;
+  color: white;
+  text-align: left;
+  opacity: 1;
+  color: #e6f1ff;
+  font-size:20px;
 }
 
 h2.projectDescription{
   color: #e6f1ff;
   text-align: center;
   opacity: .8;
+}
+
+em{
+  color: #73AD21;;
 }
 
 h2{
@@ -212,7 +224,7 @@ li {
 }
 
 li.link {
-  float: none;
+  float: left;
 }
 
 li a {
@@ -224,8 +236,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+li a.glow:hover {
   opacity: 1;
   animation: glow 1s;
   animation-fill-mode: forwards;

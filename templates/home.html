@@ -13,19 +13,10 @@
     <div class="nav" id="navbar">
         <ul>
 
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-
-        </ul>
-    </div>
-
-    <div class="links" id="links">
-        <ul>
-
-            <li class="link"><a class="imageLink" href="https://github.com/blockheads"><img src="{{url_for('static', filename='images/github.png')}}"
-            height=50" width="50"></a></li>
+            <li><a class="imageLink" href="/resume">Resume</a></li>
+            <li><a class="imageLink" href="#contact">Contact</a></li>
+            <li><a class="imageLink" href="#projects">Projects</a></li>
+            <li><a class="imageLink" href="#about">About</a></li>
 
         </ul>
     </div>
@@ -47,9 +38,9 @@
                 Rochester Institute of Technology Class of 2021
             </h2>
             <div class ="buttonWrapper">
-                <a href=mailto:nxp6155@rit.edu">
+                <a href="#contact">
                     <button class="contact">
-                        GET IN TOUCH
+                        CONTACT ME
                     </button>
                 </a>
 
@@ -66,21 +57,26 @@
             </h1>
 
             <img class="me" src="{{url_for('static', filename='images/me.jpg')}}">
-            <h3 class="description3">
-                Welcome to my website running on pythonAnywhere!
-            </h3>
-            <h3 class="description3">
+            <p class="about">
+                Welcome to my website running on <em>PythonAnywhere!</em>
+            </p>
+            <p class="about">
                 I am a computer science student currently studying at RIT, and expecting to graduate in 2021.
-            </h3>
+            </p>
 
-            <h3 class="description3">
-                I have programmed in many different environments, after pursuing my own projects and working at FacilityConnex,
-                a company out of Nashua NH, and additionally L3Harris, a company in Victor NY.
-            </h3>
+            <p class="about">
+                I'm always working on a project, and this site is where my coding endeavours I can show off go. And I'm
+                thinking about adding some extra details on some of these projects.
+            </p>
 
-            <h3 class="description3">
+            <p class="about">
+                I have programmed in many different environments, after pursuing my own projects and working at <em>FacilityConnex</em>,
+                a company out of Nashua NH, and additionally <em>L3Harris</em>, a company in Victor NY.
+            <p>
+
+            <p class="about">
                 Please take a look at some of my projects, and don't hesitate to contact me with any questions.
-            </h3>
+            </p>
 
         </div>
     </div>
@@ -96,31 +92,7 @@
                 Click on a project to see what I've been up to.
             </h2>
 
-            <a href="https://github.com/blockheads/ConquerorGame">
-                <div class="projectContainer">
-
-                    <div class="projectDescription">
-
-                        <h2 class="projectDescription">
-                            Conqueror Game
-                        </h2>
-                        <p>
-                            Currently over this summer I am working on making a python based RPG. Take a look
-                            to see my progress thus far.
-                        </p>
-
-                    </div>
-
-                    <ul class="languages">
-
-                        <li class="language">Python</li>
-                        <li class="language">PyGame</li>
-                    </ul>
-
-                </div>
-            </a>
-
-            <a href="https://github.com/blockheads/screeps">
+            <a class="glow" href="https://github.com/blockheads/screeps">
                 <div class="projectContainer">
                     <div class="projectDescription">
                         <h2 class="projectDescription">
@@ -145,7 +117,31 @@
                 </div>
             </a>
 
-            <a href="https://github.com/blockheads/NicholasPueschelWebApp">
+            <a class="glow" href="https://github.com/blockheads/ConquerorGame">
+                <div class="projectContainer">
+
+                    <div class="projectDescription">
+
+                        <h2 class="projectDescription">
+                            Conqueror Game
+                        </h2>
+                        <p>
+                            Currently over this summer I am working on making a python based RPG. Take a look
+                            to see my progress thus far.
+                        </p>
+
+                    </div>
+
+                    <ul class="languages">
+
+                        <li class="language">Python</li>
+                        <li class="language">PyGame</li>
+                    </ul>
+
+                </div>
+            </a>
+
+            <a class="glow" href="https://github.com/blockheads/NicholasPueschelWebApp">
                 <div class="projectContainer">
 
                     <div class="projectDescription">
@@ -170,7 +166,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/blockheads/OpenGL-Render">
+            <a class="glow" href="https://github.com/blockheads/OpenGL-Render">
                 <div class="projectContainer">
 
                     <div class="projectDescription">
@@ -197,31 +193,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/blockheads/2D-Wargame">
-                <div class="projectContainer">
-
-                    <div class="projectDescription">
-
-                        <h2 class="projectDescription">
-                            2D Shooter Game
-                        </h2>
-                        <p>
-                            This was a older project, where I designed a physics based shooting simulator in
-                            Unreal Engine.
-                        </p>
-
-                    </div>
-
-                    <ul class="languages">
-
-                        <li class="language">C++</li>
-                        <li class="language">Unreal Engine</li>
-                    </ul>
-
-                </div>
-            </a>
-
-            <a href="https://github.com/blockheads/SmartLad42">
+            <a class="glow" href="https://github.com/blockheads/SmartLad42">
                 <div class="projectContainer">
 
                     <div class="projectDescription">
@@ -246,6 +218,29 @@
                 </div>
             </a>
 
+            <a class="glow" href="https://github.com/blockheads/2D-Wargame">
+                <div class="projectContainer">
+
+                    <div class="projectDescription">
+
+                        <h2 class="projectDescription">
+                            2D Shooter Game
+                        </h2>
+                        <p>
+                            This was a older project, where I designed a physics based shooting simulator in
+                            Unreal Engine.
+                        </p>
+
+                    </div>
+
+                    <ul class="languages">
+
+                        <li class="language">C++</li>
+                        <li class="language">Unreal Engine</li>
+                    </ul>
+
+                </div>
+            </a>
 
         </div>
     </div>
@@ -261,13 +256,24 @@
                 Thank you for taking the time to explore what I've been up to.
             </h2>
             <h2 class="description2">
-                Currently I am looking for an internship for fall of 2020, press the magic button below and let's chat.
+                Currently I am looking for an internship for fall of 2020, here's all my contact info I know.
             </h2>
 
-            <div class ="buttonWrapper">
-                <button class="contact">
-                    GET IN TOUCH
-                </button>
+            <h2 class="description2"> P.S: if you don't use a external email app, my email is nxp6155@rit.edu</h2>
+
+            <div class="links" id="links">
+                <ul>
+
+                    <li class="link"><a class="imageLink" href="https://github.com/blockheads">GITHUB<img src="{{url_for('static', filename='images/github.png')}}"
+                    height=50" width="50"></a></li>
+
+                    <li class="link"><a class="imageLink" href="/resume">RESUME<img src="{{url_for('static', filename='images/resume.png')}}"
+                    height=50" width="50"></a></li>
+
+                    <li class="link"><a class="imageLink" href="mailto:nxp6155@rit.edu">EMAIL<img src="{{url_for('static', filename='images/email.png')}}"
+                    height=50" width="50"></a></li>
+
+                </ul>
             </div>
 
         </div>
