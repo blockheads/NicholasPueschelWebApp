@@ -20,9 +20,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334557', end
 
 div.container {
   position: relative;
-  margin-top: 200px;
-  margin-bottom: 50%;
-  border: 3px solid #73AD21;
+  margin-bottom: 15%;
+  margin-top:15%;
 }
 
 div.divider1{
@@ -34,19 +33,24 @@ div.divider1{
 
 div.containerAbout {
   position: relative;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
+  scroll-margin-top: 100px;
+}
+
+div.containerAboutSecond {
+  position: relative;
+  margin-bottom: 50%;
   scroll-margin-top: 100px;
 }
 
 div.containerAboutEnd {
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   scroll-margin-top: 100px;
 }
 
 div.descriptor{
-  position: absolute;
-  margin-left: 10%;
+  position: relative;
   margin-bottom: 10%;
 }
 
@@ -70,10 +74,10 @@ img.me{
 }
 
 div.projectContainer{
-  width: 45%;
+  width: 450px;
   height: 250px;
   background: #334A57;
-  float:left;
+  float: left;
   margin: 10px;
 }
 
@@ -96,6 +100,13 @@ div.shiftCenter{
   position: relative;
   margin-left: 25%;
   margin-right: 25%;
+}
+
+
+div.shiftCenterTitle{
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 hr.about{
@@ -125,8 +136,9 @@ hr.contact{
   border: 2px solid #73AD21;
   color: grey;
   opacity:1;
+  border-radius: 12px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#334557+0,0d3156+100 */
-background: #334557; /* Old browsers */
+  background: #334557; /* Old browsers */
 
 }
 
@@ -188,8 +200,8 @@ em{
 }
 
 h2{
-  color: #58bb7c;
-  text-align: right;
+  color: #ffefd5;
+  text-align: left;
   opacity: .8;
 }
 
@@ -211,6 +223,7 @@ ul.languages{
   display: table-cell;
   vertical-align: bottom;
   float:bottom;
+
 }
 
 li.language{
