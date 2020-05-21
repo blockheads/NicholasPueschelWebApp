@@ -10,7 +10,7 @@ def home():
 
 @app.route('/resume') #the url you'll send the user to when he wants the pdf
 def pdfviewer():
-    return redirect("/resume.pdf") #the pdf itself
+    return send_file("files/resume.pdf") #the pdf itself
 
 # https://stackoverflow.com/questions/21714653/flask-css-not-updating
 # for browser caching
